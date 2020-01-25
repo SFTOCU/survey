@@ -19,7 +19,8 @@ window.onload = function () {
             postData(function(res){
                 if(res.err){
                     if(res.err===true)res.err = "既に使用済みのQRコードです。";
-                    return alert(res.err);
+                    alert(res.err);
+                    return liff.closeWindow();
                 }
                 else{
                     myApp.loading=false;
