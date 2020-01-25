@@ -16,7 +16,8 @@ window.onload = function () {
             payload.qid = myApp.qid;
             postData(function(res){
                 if(res.err){
-                    return alert(err);
+                    if(res.err===true)res.err = "既に使用済みのQRコードです。";
+                    return alert(res.err);
                 }
                 else{
                     myApp.loading=false;
