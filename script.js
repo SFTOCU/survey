@@ -6,7 +6,7 @@ window.onload = function () {
         data:{
             loading:true,
             liff:false,
-            qid:Number(location.search.slice(1))
+            qid:Number(location.search.split("=")[1])
         }
     });
     liff.init(
