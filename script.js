@@ -1,8 +1,8 @@
 payload = {};
 
 window.onload = function () {
-    alert(location.search);
-    alert(location.search.split("=")[1]);
+    //alert(location.search);
+    //alert(location.search.split("=")[1]);
     myApp = new Vue({
         el:"#app",
         data:{
